@@ -78,4 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   # Added as per devise installation instructions.
   config.action_mailer.default_url_options = { host: 'danielsapp1988.herokuapp.com' }
+  config.serve_static_files=true
 end
