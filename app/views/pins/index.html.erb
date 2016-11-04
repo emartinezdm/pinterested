@@ -24,7 +24,9 @@
         <br>
         </div>
         </div>
-        <div class="panel-footer">
-        <%= link_to 'New Pin', new_pin_path, class: 'btn btn-primary' %><br />
+
         </div>
-        </div>
+
+<div class="center">
+    <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
+</div>
