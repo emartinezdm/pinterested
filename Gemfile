@@ -9,25 +9,25 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.2'
-gem 'coffee-script-source', '~> 1.10'
+#gem 'coffee-script-source', '~> 1.10'
 gem 'paperclip', '~> 5.1'
+gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.4'
-gem 'jquery-turbolinks', '~> 2.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
 group :development, :test do
-gem 'sqlite3'
 gem 'byebug'
+gem 'sqlite3', '1.3.11'
 end
 
-group :development, :test do
+group :development do
 gem 'web-console', '~> 2.0'
-
 gem 'spring'
 end
 
+
 group :production do
- gem 'pg',      '0.17.1'
- gem 'rails_12factor',   '0.0.2'
+ gem 'pg'
+ gem 'rails_12factor'
 end
